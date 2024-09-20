@@ -8,3 +8,6 @@ Although the project is open, the author of the Laremin project asks all users w
 You can contact me via:
 - GitHub: [https://github.com/Laremin](https://github.com/Laremin)
 - Telegram: [https://t.me/Laremin](https://t.me/Laremin)
+
+
+The project will continue to evolve and improve. If you have any ideas about the functionality or other improvements, please contact me, I will be happy to hear your opinion.
