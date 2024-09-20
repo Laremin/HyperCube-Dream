@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    background-color: #000; /* Черный фон */
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10; /* Чтобы выбор цвета был над канвасом */
+    display: flex;
+    align-items: center;
+}
+
+#colorPicker {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#shapeSelector {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: gray;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#footer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+
+#name {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#socialLinks {
+    display: flex;
+    gap: 10px;
+    justify-content: center;    
+}
+
+#socialLinks a {
+    display: inline-block;
+}
+
+#socialLinks img {
+    width: 30px;
+    height: 30px;
+}
+
+#socialLinks a:hover img {
+    filter: brightness(0.8); /* Эффект при наведении */
+}

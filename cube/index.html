@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyperCube Dream</title>
+    <link rel="shortcut icon" href="assets/hyperDream.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="stylesCube.css">
+</head>
+<body>
+    <div id="header">
+        <input type="color" id="colorPicker" value="#00ff00" />
+        <select id="shapeSelector">
+            <option value="cube">Cube</option>
+            <option value="tesseract">It is being developed</option>
+            <option value="penteract">It is being developed</option>
+        </select>
+        <label for="rotationSpeed">Rotation Speed:</label>
+        <input type="range" id="rotationSpeed" min="0" max="0.1" step="0.01" value="0.01">
+    </div>
+    <div id="info">
+        <p>Current Shape: <span id="currentShape">Cube</span></p>
+    </div>    
+    <div id="footer">
+        <div id="socialLinks">
+            <a href="https://github.com/Laremin" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub" />
+            </a>
+            <a href="https://t.me/Laremin" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/telegram.png" alt="Telegram" />
+            </a>
+        </div>
+        <div id="name">Created by Laremin</div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="cube.js"></script>
+</body>
+</html>
