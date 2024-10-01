@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +11,22 @@
     <div id="header">
         <input type="color" id="colorPicker" value="#00ff00" />
         <select id="shapeSelector">
-            <option value="cube">Cube</option>
-            <option value="tesseract">It is being developed</option>
-            <option value="penteract">It is being developed</option>
+            <option value="cube">Куб</option>
+            <option value="sphere">Сфера</option>
+            <option value="octahedron">Октаэдр</option>
+            <option value="pentagram">Пентаграмма</option>
         </select>
-        <label for="rotationSpeed">Rotation Speed:</label>
+        <label for="rotationSpeed">Скорость вращения:</label>
         <input type="range" id="rotationSpeed" min="0" max="0.1" step="0.01" value="0.01">
     </div>
-    <div id="info">
-        <p>Current Shape: <span id="currentShape">Cube</span></p>
-    </div>    
+
+    <div id="infoPanel">
+        <p id="shapeInfo">Фигура: Куб</p>
+        <p id="colorInfo">Цвет: #00ff00</p>
+        <p id="speedInfo">Скорость: 0.01</p>
+        <p id="rotationStatus">Вращение: Вкл</p>
+    </div>
+
     <div id="footer">
         <div id="socialLinks">
             <a href="https://github.com/Laremin" target="_blank">
@@ -31,8 +37,12 @@
             </a>
         </div>
         <div id="name">Created by Laremin</div>
+        <button id="exportButton">Экспортировать фигуру</button>
+        <button id="faqButton">FAQ</button>
+        
     </div>
     
+    <!-- Подключение библиотеки THREE.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="cube.js"></script>
 </body>
